@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/one_rep_back_btn"
+        android:layout_width="45dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="124dp"
+        android:text="ONE REP MAX CALCULATOR"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lift_lb"
+        android:layout_width="128dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="155dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:hint="Lift (lb)"
+        android:inputType="number"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/reps"
+        android:layout_width="128dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:hint="Repetitions"
+        android:inputType="number"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="267dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/calculate_one_rep_btn"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Calculate"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/rep_info"
+            android:layout_below="@+id/calculate_one_rep_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Percentage"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/max_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Weight"
+                android:textSize="15dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/rep_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Reps"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:paddingRight="5dp"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/reps_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_below="@+id/rep_info"/>
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

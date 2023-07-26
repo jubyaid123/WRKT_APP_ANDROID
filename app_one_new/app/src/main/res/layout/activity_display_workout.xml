@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayWorkout">
+    <Button
+        android:id="@+id/DisplayWorkoutBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Back"
+        android:onClick="onBackBtnClick"
+        />
+
+    <TextView
+        android:id="@+id/edtTxtWorkoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text="WOKROUT NAME"
+        android:textSize="20dp"
+        />
+
+    <!-- Titles -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="120dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:text="Exercise:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="120dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="200dp"
+        android:text="Sets:"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="120dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+        android:text="Reps:"
+        android:textStyle="bold"
+        />
+
+    <!-- Workout Texts -->
+
+
+    <TextView
+        android:id="@+id/edtTxtWorkoutOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:text="Workout1"
+        />
+    <TextView
+        android:id="@+id/edtTxtWorkoutTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <TextView
+        android:id="@+id/edtTxtWorkoutThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="250dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/edtTxtWorkoutFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="300dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <TextView
+        android:id="@+id/edtTxtWorkoutFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="350dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        />
+    <!-- SETS TEXTS -->
+
+    <TextView
+        android:id="@+id/edtTxtSetWorkoutOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="200dp"
+        android:text="Set1"
+        />
+    <TextView
+        android:id="@+id/edtTxtSetWorkoutTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="200dp"
+
+        />
+    <TextView
+        android:id="@+id/edtTxtSetWorkoutThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="250dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="200dp"
+        />
+    <TextView
+        android:id="@+id/edtTxtSetWorkoutFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="300dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="200dp"
+
+        />
+    <TextView
+        android:id="@+id/edtTxtSetWorkoutFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="350dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="200dp"
+        />
+    <!-- REPS TEXTS -->
+    <TextView
+        android:id="@+id/edtTxtRepWorkoutOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="150dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+        android:text="Rep1"
+        />
+    <TextView
+        android:id="@+id/edtTxtRepWorkoutTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="200dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+
+        />
+    <TextView
+        android:id="@+id/edtTxtRepWorkoutThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="250dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+        />
+    <TextView
+        android:id="@+id/edtTxtRepWorkoutFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="300dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+
+        />
+    <TextView
+        android:id="@+id/edtTxtRepWorkoutFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="350dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="300dp"
+        />
+
+</FrameLayout>
